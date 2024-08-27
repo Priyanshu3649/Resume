@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/public/styles.css">
 </head>
 
 <body>
@@ -40,7 +40,7 @@
         <section id="about" class="my-5">
 
             <div class="col-md-6">
-                <img src="/photo.jpg" alt="Profile Photo" class="profile-photo img-fluid">
+                <img src="/public/photo.jpg" alt="Profile Photo" class="profile-photo img-fluid">
                 <div class="profile-card101">
                     <h1 id="name"></h1>
                     <p><span class="key">Email:</span> <span class="value" id="email"></span></p>
@@ -90,17 +90,7 @@
             </div>
         </section>
 
-        <script>
-            document.querySelector('.dropdown-title').addEventListener('click', function () {
-                var content = document.querySelector('.dropdown-content');
-                if (content.style.display === 'none' || content.style.display === '') {
-                    content.style.display = 'block';
-                } else {
-                    content.style.display = 'none';
-                }
-            });
-        </script>
-
+        
         <section id="achievements" class="dropdown-section my-5">
             <h2 class="dropdown-title">Achievements <span class="icon">&#9662;</span></h2>
             <div class="dropdown-content">
@@ -257,13 +247,14 @@
                     </ul>
                 </div>
         </section>
-
+        
+  
         <section id="certificates" class="my-5">
             <h2>Certificates</h2>
             <div class="card-container">
                 <div class="card-body" data-target="popup1">
                     <div class="card-image-placeholder" onclick="viewCertificate('img2.jpg', 'popup1')">
-                        <img src="/img2.jpg" alt="Certificate 1" class="card-image">
+                        <img src="/public/img2.jpg" alt="Certificate 1" class="card-image">
                     </div>
                     <h5 class="card-title" onclick="viewCertificate('img2.jpg', 'popup1')">Expressive Canvas</h5>
                     <button class="view-certificate-btn" onclick="viewCertificate('img2.jpg', 'popup1')">View Certificate</button>
@@ -271,7 +262,7 @@
         
                 <div class="card-body" data-target="popup2">
                     <div class="card-image-placeholder" onclick="viewCertificate('img1.jpg', 'popup2')">
-                        <img src="/img1.jpg" alt="Certificate 2" class="card-image">
+                        <img src="/public/img1.jpg" alt="Certificate 2" class="card-image">
                     </div>
                     <h5 class="card-title" onclick="viewCertificate('img1.jpg', 'popup2')">ATL Space Challenge:</h5>
                     <button class="view-certificate-btn" onclick="viewCertificate('img1.jpg', 'popup2')">View Certificate</button>
@@ -279,7 +270,7 @@
         
                 <div class="card-body" data-target="popup3">
                     <div class="card-image-placeholder" onclick="viewCertificate('img3.jpg', 'popup3')">
-                        <img src="/img3.jpg" alt="Certificate 3" class="card-image">
+                        <img src="/public/img3.jpg" alt="Certificate 3" class="card-image">
                     </div>
                     <h5 class="card-title" onclick="viewCertificate('img3.jpg', 'popup3')">IMAGIVATION:</h5>
                     <button class="view-certificate-btn" onclick="viewCertificate('img3.jpg', 'popup3')">View Certificate</button>
@@ -287,7 +278,7 @@
         
                 <div class="card-body" data-target="popup4">
                     <div class="card-image-placeholder" onclick="viewCertificate('img5.png', 'popup4')">
-                        <img src="/img5.png" alt="Certificate 4" class="card-image">
+                        <img src="/public/img5.png" alt="Certificate 4" class="card-image">
                     </div>
                     <h5 class="card-title" onclick="viewCertificate('img5.png', 'popup4')">ATL MARATHON:</h5>
                     <button class="view-certificate-btn" onclick="viewCertificate('img5.png', 'popup4')">View Certificate</button>
@@ -295,7 +286,7 @@
         
                 <div class="card-body" data-target="popup5">
                     <div class="card-image-placeholder" onclick="viewCertificate('img4.png', 'popup5')">
-                        <img src="/img4.png" alt="Certificate 5" class="card-image">
+                        <img src="public/img4.png" alt="Certificate 5" class="card-image">
                     </div>
                     <h5 class="card-title" onclick="viewCertificate('img4.png', 'popup5')">CHEMBOT:</h5>
                     <button class="view-certificate-btn" onclick="viewCertificate('img4.png', 'popup5')">View Certificate</button>
@@ -378,7 +369,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="/scripts.js"></script>
+    <script src="/public/scripts.js"></script>
 
 
 
