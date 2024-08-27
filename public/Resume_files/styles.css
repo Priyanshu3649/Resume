@@ -1,0 +1,436 @@
+/* Reset some default styling */
+body,
+h1,
+h2,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Body styling */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+  padding-top: 60px; /* Space for fixed header */
+}
+
+/* Header styling */
+header {
+  background: #333;
+  color: #fff;
+  padding: 0.5rem 1rem; /* Reduced padding for header */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .container1 {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+}
+
+header nav ul .nav-link {
+  color: #fff;
+  padding: 10px;
+}
+
+header nav ul .nav-link:hover {
+  background: #555;
+  color: #fff;
+  border-radius: 4px;
+}
+
+/* Dropdown Menu Styling */
+.dropdown-menu {
+  background-color: #333;
+}
+
+.dropdown-menu .dropdown-item {
+  color: #fff;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #555;
+}
+
+/* Dropdown Section Styling */
+.dropdown-section {
+  position: relative;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 3rem; /* Increased gap */
+  padding: 1rem;
+}
+
+.dropdown-title {
+  cursor: pointer;
+  background: #007bff;
+  color: #fff;
+  padding: 10px;
+  border-bottom: 2px solid #0056b3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon {
+  font-size: 0.8em;
+}
+
+/* Section Styling */
+section {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 3rem;
+}
+
+/* Profile Photo Styling */
+.profile-photo {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 5px solid #007bff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+/* Card Styling for Certificates */
+.certificate-card {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+  border-bottom: 2px solid #007bff;
+  border-radius: 8px 8px 0 0;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-title {
+  margin-bottom: 0.5rem;
+}
+
+/* Footer styling */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .profile-photo {
+    width: 120px;
+  }
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex-direction: column;
+}
+
+.education-item {
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+  display: flex;
+  flex-direction: column;
+}
+.education-item:last-child {
+  border-bottom: none;
+}
+.education-item h2 {
+  margin: 0;
+  font-size: 1.2em;
+  color: #333;
+}
+.education-item p {
+  margin: 5px 0;
+}
+.education-item .degree {
+  font-weight: bold;
+}
+.education-item .details {
+  color: #555;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+}
+.card h2 {
+  margin: 0 0 10px;
+  font-size: 1.5em;
+  color: #333;
+}
+.card .key {
+  font-weight: bold;
+  color: #555;
+}
+.card .value {
+  margin-bottom: 10px;
+  color: #666;
+}
+.card .description {
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+  margin-top: 10px;
+  color: #444;
+}
+.profile-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  text-align: center;
+  overflow: hidden;
+  flex-direction: row;
+}
+.profile-card h1 {
+  margin: 50;
+  font-size: 1.8em;
+  color: #007bff;
+}
+.profile-card p {
+  margin: 10px 0;
+  font-size: 1em;
+  color: #555;
+  line-height: 1.6;
+}
+.profile-card .key {
+  font-weight: bold;
+  color: #333;
+}
+.profile-card .value1 {
+  color: #2623b9;
+}
+.profile-card a {
+  color: #007bff;
+  text-decoration: none;
+}
+.profile-card a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+.profile-card101 {
+  background: rgb(204, 202, 202);
+  border: 2px solid #111010;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  margin: 0px;
+  float:left;
+  margin-left: 180px;
+  margin-top: -20px;
+}
+.profile-card101 a:hover {
+  text-decoration: underline;
+}
+
+.col-md-6 {
+  display: flex;
+  margin: 0;
+  flex-direction: row;
+}
+.profile-card {
+  flex: 1;}
+
+
+  .skills-list li {
+    margin: 10px 0;
+    padding: 10px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1.1em;
+    text-align: center;
+}
+.skills-list li:nth-child(even) {
+    background: #e9ecef;
+}
+.achievement {
+  margin-bottom: 20px;
+}
+.key {
+  font-weight: bold;
+}
+
+.contact-section {
+  text-align: center;
+  margin-top: 50px;
+}
+.contact-link {
+  font-size: 20px;
+  font-weight: bold;
+  color: #0000EE;
+  text-decoration: none;
+  display: block;
+  margin: 10px 0;
+}
+.contact-link:hover {
+  text-decoration: underline;
+}
+.dropdown-content {
+  display: none;
+  margin-top: 10px;
+}
+.dropdown-title:hover + .dropdown-content,
+.dropdown-section:hover .dropdown-content {
+  display: block;
+}
+
+.card-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: nowrap; /* Ensure cards stay in one row */
+  overflow-x: auto; /* Enable horizontal scrolling if needed */
+}
+.card-body {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  position: relative; /* Position relative for overlay positioning */
+}
+.card-image {
+  width: 5cm;
+  height: 4cm;
+  object-fit: cover; /* Ensure the image covers the dimensions */
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+.card-image-placeholder {
+  width: 5cm;
+  height: 4cm;
+  background-color: #f0f0f0; /* Light gray placeholder color */
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+.popup {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  background-color: white;
+  z-index: 1000;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+.popup h5 {
+  margin-top: 0;
+}
+.popup .close-btn {
+  cursor: pointer;
+  float: right;
+  font-size: 20px;
+  margin-top: -10px;
+  margin-right: -10px;
+}
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  z-index: 999;
+}
+.dpn {
+  position: relative;
+  display: inline-block;
+}
+.dpn-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+  background-color: transparent;
+}
+.dpn-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 5px;
+  top: 100%;
+  left: 0;
+}
+.dpn-content a {
+  color: white(250, 248, 248);
+  padding: 12px 16px;
+  text-decoration: antiquewhite;
+  display: block;
+}
+.dpn-content a:hover {
+  background-color: white;
+}
+.dpn:hover .dpn-content {
+  display: block;
+  offset-distance: 20px;
+}
+.dpn:hover .dpn-button {
+  background-color: white;
+  color: black;
+}

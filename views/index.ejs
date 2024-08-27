@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="container1">
+            <h1>My Resume</h1>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                    <li class="nav-item dropdown">
+                        </a>
+                        <div class="dpn">
+                            <button class="dpn-button">Sections</button>
+                            <div class="dpn-content">
+                                
+                                <a class="dpn-item" href="#skills">Skills</a>
+                                <a class="dpn-item" href="#achievements">Achievements</a>
+                                <a class="dpn-item" href="#hobbies">Hobbies</a>
+                                <a class="dpn-item" href="#education">Education</a>
+                                <a class="dpn-item" href="#experience">Experience</a>
+                                <a class="dpn-item" href="#certificates">Certificates</a>
+                                <a class="dpn-item" href="#contact">Contact</a>
+                            </div>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mt-5">
+        <section id="about" class="my-5">
+
+            <div class="col-md-6">
+                <img src="/photo.jpg" alt="Profile Photo" class="profile-photo img-fluid">
+                <div class="profile-card101">
+                    <h1 id="name"></h1>
+                    <p><span class="key">Email:</span> <span class="value" id="email"></span></p>
+                    <p><span class="key">Phone:</span> <span class="value" id="phone"></span></p>
+                    <p><span class="key">Address:</span> <span class="value" id="address"></span></p>
+                    <p><span class="key">Website:</span> <a href="#" id="website" class="value1 "></a></p>
+                </div>
+
+                <script>
+                    const profileData = {
+                        name: 'Priyanshu Pandey',
+                        email: 'pandeypriyanshu53@gmail.com',
+                        phone: '9313686893',
+                        address: 'H. no-151, Holambi Khurd, Delhi-110082',
+                        website: 'http://localhost:3000'  // Updated to a valid URL
+                    };
+
+                    // Populate the profile card with data
+                    document.getElementById('name').textContent = profileData.name;
+                    document.getElementById('email').textContent = profileData.email;
+                    document.getElementById('phone').textContent = profileData.phone;
+                    document.getElementById('address').textContent = profileData.address;
+                    document.getElementById('website').textContent = profileData.website;
+                    document.getElementById('website').href = profileData.website;
+                </script>
+            </div>
+            </div>
+        </section>
+
+        <section id="skills" class="dropdown-section my-5">
+            <h2 class="dropdown-title">Technical Skills <span class="icon">&#9662;</span></h2>
+            <div class="dropdown-content">
+                <ul class="skills-list">
+                    <li>JavaScript</li>
+                    <li>Node.js</li>
+                    <li>Express.js</li>
+                    <li>React.js</li>
+                    <li>HTML</li>
+                    <li>CSS {Bootstrap, Tailwind...}</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>MySQL</li>
+                    <li>AWS</li>
+                    <li>Android Studio</li>
+                    <li>Firebase</li>
+                </ul>
+            </div>
+        </section>
+
+        
+        <section id="achievements" class="dropdown-section my-5">
+            <h2 class="dropdown-title">Achievements <span class="icon">&#9662;</span></h2>
+            <div class="dropdown-content">
+                <ul>
+                    <li></li>
+                    <li>
+                        <div class="achievement">
+                            <span class="key">Year:</span> <span class="value">2020</span><br>
+                            <span class="key">Achievement:</span> <span class="value">Inter-school Hackathon 1st position</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="achievement">
+                            <span class="key">Year:</span> <span class="value">2021</span><br>
+                            <span class="key">Achievement:</span> <span class="value">App got recognised in top 75 innnovations</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="achievement">
+                            <span class="key">Year:</span> <span class="value">2022</span><br>
+                            <span class="key">Achievement:</span> <span class="value">Created a malware detection and
+                                removal app which begged 3rd position</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="achievement">
+                            <span class="key">Year:</span> <span class="value">2023</span><br>
+                            <span class="key">Achievement:</span> <span class="value">Got cash prize from Amazon for creating a
+                                app in JAVA Coding</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="hobbies" class="dropdown-section my-5">
+            <h2 class="dropdown-title">Hobbies <span class="icon">&#9662;</span></h2>
+            <div class="dropdown-content">
+                <ul>
+                    <li>Football</li>
+                    <li>Cricket</li>
+                    <li>Chess</li>
+                    <li>App Development</li>
+                    <li>Video Editting</li>
+                    <li>Listening Music</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="experience" class="dropdown-section my-5">
+            <h2 class="dropdown-title">Past Projects <span class="icon">&#9662;</span></h2>
+            <div class="dropdown-content">
+                <ul>
+                    <li>
+                        <div class="card">
+                            <h2>ATL Space Challenge 2021</h2>
+                            <div><span class="key">Role:</span> <span class="value">School Representative</span></div>
+                            <div><span class="key">Organisers:</span> <span class="value">Indian Space Research Organisation</span></div>
+                            <div><span class="key">Year:</span> <span class="value">2021</span></div>
+                            <div><span class="key">Award:</span>
+                                <a href="/img1.jpg" class="value" target="_blank">Recognition in top 75 innovations</a></div>
+                            <div class="description">
+                                <span class="key">Description:</span> <span class="value">Created a fully fledged app that included Books, Videos, Images, Quizzes, Animation, Simulation, Chatbot in regards to Mars </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <h2>REVERBERATION'S 22</h2>
+                            <div><span class="key">Role:</span> <span class="value">Solo canvas making</span></div>
+                            <div><span class="key">Organisers:</span> <span class="value">Bal Bharti Public School</span></div>
+                            <div><span class="key">Year:</span> <span class="value">2022</span></div>
+                            <div><span class="key">Award:</span>
+                                <a href="/img2jpg" class="value" target="_blank">Recognition in top 75 innovations</a></div>
+                            <div class="description">
+                                <span class="key">Description:</span> <span class="value">Developed an Expressive Canvas .</span>
+                            </div>
+                        </div>
+                        <li>
+                            <div class="card">
+                                <h2>IMAGIVATION 2021</h2>
+                                <div><span class="key">Role:</span> <span class="value">School Representative</span></div>
+                                <div><span class="key">Organisers:</span> <span class="value">ZENIK LEARNING</span></div>
+                                <div><span class="key">Year:</span> <span class="value">2021</span></div>
+                                <div><span class="key">Award:</span>
+                                    <a href="/img1.jpg" class="value" target="_blank">Got second position</a></div>
+                                <div class="description">
+                                    <span class="key">Description:</span> <span class="value">Created a fully fledged app that included Books, Videos, Images, Quizzes, Animation, Simulation, Chatbot in regards to Mars </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card">
+                                <h2>The Alchemist Curium</h2>
+                                <div><span class="key">Role:</span> <span class="value">App Developer</span></div>
+                                <div><span class="key">Organisers:</span> <span class="value">Birla Vidya Niketan</span></div>
+                                <div><span class="key">Year:</span> <span class="value">2021</span></div>
+                                <div><span class="key">Award:</span>
+                                    <a href="/img4.png" class="value" target="_blank">Got third position</a></div>
+                                <div class="description">
+                                    <span class="key">Description:</span> <span class="value">Created a fully fledged app that included Books, Videos, Images, Quizzes, Animation, Simulation, Chatbot in regards to Mars </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card">
+                                <h2>ATL MARATHON 2021</h2>
+                                <div><span class="key">Role:</span> <span class="value">School Representative</span></div>
+                                <div><span class="key">Organisers:</span> <span class="value">NITI AAYOG & AIM</span></div>
+                                <div><span class="key">Year:</span> <span class="value">2021</span></div>
+                                <div><span class="key">Award:</span>
+                                    <a href="/img5.png" class="value" target="_blank">Certificate of Appreciation</a></div>
+                                <div class="description">
+                                    <span class="key">Description:</span> <span class="value">Created a fully fledged app that included Books, Videos, Images, Quizzes, Animation, Simulation, Chatbot in regards to Mars </span>
+                                </div>
+                            </div>
+                        </li>
+            </div>
+            </li>
+        </ul>
+            </div>
+        </section>
+
+        <section id="education" class="dropdown-section my-5">
+            <h2 class="dropdown-title">Education <span class="icon">&#9662;</span></h2>
+            <div class="container">
+                <div class="dropdown-content">
+                    <ul>
+                        <li>
+                            <div class="education-item">
+                                <h2 class="degree">JEE Mains</h2>
+                                <p class="details">Percentile: 87.6%ile</p>
+                                <p class="details">Institution: National Testing Agency</p>
+                                <p class="details">Year: 2024</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="education-item">
+                                <h2 class="degree">Senior Secondary School Passing Certificate</h2>
+                                <p class="details">Percentage: 78.6%</p>
+                                <p class="details">Institution: The Mann School</p>
+                                <p class="details">Year: 2023</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="education-item">
+                                <h2 class="degree">Secondary School Passing Certificate</h2>
+                                <p class="details">Percentage: 93.8%</p>
+                                <p class="details">Institution: The Mann School</p>
+                                <p class="details">Year: 2021</p>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+        </section>
+        
+  
+        <section id="certificates" class="my-5">
+            <h2>Certificates</h2>
+            <div class="card-container">
+                <div class="card-body" data-target="popup1">
+                    <div class="card-image-placeholder" onclick="viewCertificate('img2.jpg', 'popup1')">
+                        <img src="/img2.jpg" alt="Certificate 1" class="card-image">
+                    </div>
+                    <h5 class="card-title" onclick="viewCertificate('img2.jpg', 'popup1')">Expressive Canvas</h5>
+                    <button class="view-certificate-btn" onclick="viewCertificate('img2.jpg', 'popup1')">View Certificate</button>
+                </div>
+        
+                <div class="card-body" data-target="popup2">
+                    <div class="card-image-placeholder" onclick="viewCertificate('img1.jpg', 'popup2')">
+                        <img src="/img1.jpg" alt="Certificate 2" class="card-image">
+                    </div>
+                    <h5 class="card-title" onclick="viewCertificate('img1.jpg', 'popup2')">ATL Space Challenge:</h5>
+                    <button class="view-certificate-btn" onclick="viewCertificate('img1.jpg', 'popup2')">View Certificate</button>
+                </div>
+        
+                <div class="card-body" data-target="popup3">
+                    <div class="card-image-placeholder" onclick="viewCertificate('img3.jpg', 'popup3')">
+                        <img src="/img3.jpg" alt="Certificate 3" class="card-image">
+                    </div>
+                    <h5 class="card-title" onclick="viewCertificate('img3.jpg', 'popup3')">IMAGIVATION:</h5>
+                    <button class="view-certificate-btn" onclick="viewCertificate('img3.jpg', 'popup3')">View Certificate</button>
+                </div>
+        
+                <div class="card-body" data-target="popup4">
+                    <div class="card-image-placeholder" onclick="viewCertificate('img5.png', 'popup4')">
+                        <img src="/img5.png" alt="Certificate 4" class="card-image">
+                    </div>
+                    <h5 class="card-title" onclick="viewCertificate('img5.png', 'popup4')">ATL MARATHON:</h5>
+                    <button class="view-certificate-btn" onclick="viewCertificate('img5.png', 'popup4')">View Certificate</button>
+                </div>
+        
+                <div class="card-body" data-target="popup5">
+                    <div class="card-image-placeholder" onclick="viewCertificate('img4.png', 'popup5')">
+                        <img src="/img4.png" alt="Certificate 5" class="card-image">
+                    </div>
+                    <h5 class="card-title" onclick="viewCertificate('img4.png', 'popup5')">CHEMBOT:</h5>
+                    <button class="view-certificate-btn" onclick="viewCertificate('img4.png', 'popup5')">View Certificate</button>
+                </div>
+            </div>
+        
+            <div class="overlay" id="overlay"></div>
+        
+            <div class="popup" id="popup1">
+                <span class="close-btn" onclick="closePopup('popup1')">&times;</span>
+                <img id="popup1-img" class="popup-image" src="" alt="Certificate 1">
+                <h5>Expressive Canvas:</h5>
+                <p>"This certificate signifies the completion of a rigorous programming curriculum, covering essential languages and technologies such as JavaScript, Python, and Java. The recipient has demonstrated exceptional proficiency in developing dynamic web applications using frameworks like React and Node.js, showcasing their ability to solve complex problems and deliver robust solutions."</p>
+            </div>
+        
+            <div class="popup" id="popup2">
+                <span class="close-btn" onclick="closePopup('popup2')">&times;</span>
+                <img id="popup2-img" class="popup-image" src="" alt="Certificate 2">
+                <h5>ATL Space Challenge:</h5>
+                <p>"This certificate acknowledges the recipient's ability to create innovative projects. Through hands-on experience with HTML, CSS, JavaScript, and backend technologies, the recipient has developed advanced applications, optimized code for performance, and exhibited a strong understanding of modern software development practices."</p>
+            </div>
+        
+            <div class="popup" id="popup3">
+                <span class="close-btn" onclick="closePopup('popup3')">&times;</span>
+                <img id="popup3-img" class="popup-image" src="" alt="Certificate 3">
+                <h5>IMAGIVATION:</h5>
+                <p>"This programming certificate is a testament to the recipient's dedication to continuous learning and mastery of cutting-edge technologies. By completing intensive coursework and practical projects, the recipient has demonstrated a solid foundation in programming languages, web development, and collaborative software engineering, preparing them for future challenges in the tech industry."</p>
+            </div>
+        
+            <div class="popup" id="popup4">
+                <span class="close-btn" onclick="closePopup('popup4')">&times;</span>
+                <img id="popup4-img" class="popup-image" src="" alt="Certificate 4">
+                <h5>ATL MARATHON:</h5>
+                <p>"This certificate represents continuous improvement and staying current in a rapidly evolving field. The recipient has shown a commitment to upgrading their skills and applying them effectively in real-world projects."</p>
+            </div>
+        
+            <div class="popup" id="popup5">
+                <span class="close-btn" onclick="closePopup('popup5')">&times;</span>
+                <img id="popup5-img" class="popup-image" src="" alt="Certificate 5">
+                <h5>CHEMBOT:</h5>
+                <p>"This certificate honors the recipient's consistent effort to learn new skills, stay updated with industry trends, and continuously grow their technical knowledge, showcasing their dedication to professional development."</p>
+            </div>
+        </section>
+    <script>
+    function viewCertificate(imageSrc, popupId) {
+        var popupImage = document.getElementById(popupId + '-img');
+        popupImage.src = imageSrc;
+        document.getElementById(popupId).style.display = 'block';
+        document.getElementById('overlay').style.display = 'block';
+    }
+    
+    function closePopup(popupId) {
+        document.getElementById(popupId).style.display = 'none';
+        document.getElementById('overlay').style.display = 'none';
+    }
+    
+    document.getElementById('overlay').addEventListener('click', function () {
+        document.querySelectorAll('.popup').forEach(function (popup) {
+            popup.style.display = 'none';
+        });
+        document.getElementById('overlay').style.display = 'none';
+    });
+    </script>        
+        
+        <section id="contact" class="my-5">
+            <div class="contact-section">
+                <h1>Contact Me</h1>
+                <p>If you have any questions or want to reach out, please click the links below to send me an email or
+                    call me:</p>
+                <a href="mailto:pandeypriyanshu53@gmail.com" class="contact-link">Send Email</a>
+                <a href="tel:9313686893" class="contact-link">Call Me: 9313686893</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-light text-center py-3">
+        <p>&copy; 2024 My Resume</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/scripts.js"></script>
+
+
+
+</body>
+
+</html>
