@@ -1,4 +1,3 @@
-/* Reset some default styling */
 body,
 h1,
 h2,
@@ -226,8 +225,8 @@ footer {
   color: #444;
 }
 .profile-card {
-  background: #fff;
-  border: 1px solid #ddd;
+  background: #a1a0e5;
+  border: 3px solid #ddd;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 100%;
@@ -581,4 +580,26 @@ footer {
 .dropdown-section:hover .dropdown-content,
 .dropdown-section.active .dropdown-content {
   display: block;
+}
+
+
+.profile-photo {
+  height: 100%;
+  max-width: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.card-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+@media (max-width: 2000px) {
+  .card-body {
+      flex: 1 1 100%;
+      max-width: 50%;
+  }
+
+
 }
